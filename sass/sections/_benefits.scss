@@ -1,23 +1,24 @@
-.benefits__list {
-  display: flex;
-  max-width: 1170px;
-}
-.benefits__item {
-  margin-right: 30px;
-  flex-basis: calc((100% - 75px) / 4);
-}
-.benefits__item:last-child {
-  margin-right: 0px;
-}
-.benefits__heading {
-  margin-bottom: 10px;
-}
 .benefits,
 .wwd,
 .team {
   padding-top: 94px;
 }
+.benefits__list {
+  display: flex;
+  max-width: 1170px;
+
+  &__item {
+    margin-right: 30px;
+    flex-basis: calc((100% - 75px) / 4);
+
+    &__item:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
 .benefits__heading {
+  margin-bottom: 10px;
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.71;
@@ -34,9 +35,10 @@
   background: #f5f4fa;
   height: 120px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.benefits__icon:hover,
-.benefits__icon:focus {
-  color: $link-button-color;
-  cursor: pointer;
+
+  &__icon:hover,
+  &__icon:focus {
+    color: $link-button-color;
+    cursor: pointer;
+  }
 }

@@ -16,20 +16,21 @@ $light-color: #ffffff;
   position: relative;
 }
 .navigation__link {
+  margin-right: 50px;
   position: relative;
   font-weight: 500;
   text-decoration: none;
   color: $heading-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-&__link:hover,
-&__link:focus {
-  color: $link-button-color;
-}
+  &__link:hover,
+  &__link:focus {
+    color: $link-button-color;
 
-&__link:nth-child(1) {
-  margin-right: 40px;
+    &__link:nth-child(1) {
+      margin-right: 40px;
+    }
+  }
 }
 .current-page::after {
   content: "";
