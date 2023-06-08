@@ -1,3 +1,5 @@
+$link-button-color: #2196f3;
+$paragraph-color: #757575;
 .benefits,
 .wwd,
 .team {
@@ -6,15 +8,15 @@
 .benefits__list {
   display: flex;
   max-width: 1170px;
+}
 
-  &__item {
-    margin-right: 30px;
-    flex-basis: calc((100% - 75px) / 4);
+.benefits__item {
+  margin-right: 30px;
+  flex-basis: calc((100% - 75px) / 4);
+}
 
-    &__item:last-child {
-      margin-right: 0px;
-    }
-  }
+.benefits__item:last-child {
+  margin-right: 0px;
 }
 
 .benefits__heading {
@@ -35,10 +37,10 @@
   background: #f5f4fa;
   height: 120px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &__icon:hover,
-  &__icon:focus {
-    color: $link-button-color;
-    cursor: pointer;
-  }
+.benefits__icon:hover,
+.benefits__icon:focus {
+  color: $link-button-color;
+  cursor: pointer;
 }

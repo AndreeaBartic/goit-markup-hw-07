@@ -1,0 +1,37 @@
+$light-color: #ffffff;
+
+.wwd__heading,
+.team__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+.container-work {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.wwd__heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.wwd__list {
+  display: flex;
+}
+.wwd__item {
+  position: relative;
+  margin-right: 30px;
+}
+.wwd__overlay {
+  position: absolute;
+  display: block;
+  padding: 27px 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.17;
+  color: $light-color;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
