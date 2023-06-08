@@ -1,0 +1,13 @@
+$light-color: #ffffff;
+
+.global-header {
+  background-color: $light-color;
+  border-bottom: 1px solid #ececec;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.global-header--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

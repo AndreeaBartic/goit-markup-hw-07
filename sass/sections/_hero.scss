@@ -1,0 +1,25 @@
+$light-color: #ffffff;
+
+.hero {
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img\ \(9\).jpg");
+
+  &__heading {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $light-color;
+  }
+}
+.hero-container {
+  text-align: center;
+  padding: 200px 0;
+}
