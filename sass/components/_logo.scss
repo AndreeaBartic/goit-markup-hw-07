@@ -1,0 +1,24 @@
+$heading-footer-font-family: "Raleway", sans-serif;
+$link-button-color: #2196f3;
+$light-color: #ffffff;
+$dark-color: #000000;
+
+.logo {
+  font-family: $heading-footer-font-family;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $link-button-color;
+}
+.logo--dark-color {
+  color: $dark-color;
+}
+.global-footer--position {
+  padding-left: 1100px;
+}
+.logo--light-color {
+  color: $light-color;
+}
