@@ -11,34 +11,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./sass/styles.scss" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
     <title>Studio</title>
   </head>
 
   <body>
-    <header class="global-header">
+    <header class="section global-header">
       <div class="container global-header--container">
-        <a class="logo" href="./index.html"
-          >Web<span class="logo--dark-color">Studio</span></a
-        >
         <nav class="navigation">
+          <a class="logo" href="./index.html"
+            >Web<span class="logo--dark-color">Studio</span></a
+          >
           <ul class="navigation__pages-list">
             <li class="navigation__item">
-              <a class="navigation__link current-page" href="./index.html"
-                >Studio</a
-              >
+              <a class="navigation__link" href="./index.html">Studio</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="./portfolio.html">Portfolio</a>
+              <a class="navigation__link current-page" href="./portfolio.html"
+                >Portfolio</a
+              >
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="./contacts.html">Contacts</a>
             </li>
           </ul>
         </nav>
+
         <ul class="navigation__contacts-list">
-          <li>
+          <li class="navigation__contacts-item">
             <a class="navigation__link" href="mailto:info@devstudio.com">
               <svg class="navigation__icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -46,7 +47,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="navigation__contacts-item">
             <a class="navigation__link" href="tel:+380961111111">
               <svg class="navigation__icon" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
@@ -54,6 +55,16 @@
             >
           </li>
         </ul>
+
+        <button
+          class="toggle-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -264,7 +275,7 @@
 
     <footer class="section global-footer">
       <div class="container global-footer__container">
-        <a class="logo" href="./index.html"
+        <a class="logo logo--footer" href="./index.html"
           >Web<span class="logo--light-color">Studio</span></a
         >
         <ul class="global-footer__list">
@@ -294,7 +305,7 @@
 
           <li class="global-footer__socials">
             <p class="global-footer__description">Find us on</p>
-            <ul class="global-footer__list">
+            <ul class="global-footer__social-icons">
               <li class="global-footer__items">
                 <a class="global-footer--color" href="./instagram.com"
                   ><svg width="20" height="20">

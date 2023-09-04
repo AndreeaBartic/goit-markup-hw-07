@@ -162,5 +162,7 @@
 </symbol>
 <symbol id="icon-check-box" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4923" d="M4.817 15.389l-0.169-0.162-2.544 2.41 8.962 8.55 18.829-17.962-2.527-2.411-16.302 15.536-6.249-5.962z"></path>
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path fill="currentColor" d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
 </symbol>
 </svg></defs>

@@ -18,12 +18,12 @@ $light-color: #ffffff;
 }
 .hero__button {
   @extend %button;
-  margin-top: 30px;
-  margin-left: 500px;
+  margin: 0 auto;
   padding: 10px 20px;
   cursor: pointer;
 }
 .global-footer__button {
+  margin-bottom: 60px;
   @extend %button;
   padding-left: 43px;
   cursor: pointer;
@@ -84,7 +84,7 @@ $light-color: #ffffff;
 }
 .modal__submit-btn {
   margin-top: 30px;
-  margin-left: 125px;
+  margin-left: 85px;
   color: $light-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background: $link-button-color;
@@ -98,5 +98,10 @@ $light-color: #ffffff;
   &:focus {
     background: #188ce8;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__submit-btn {
+    margin-left: 125px;
   }
 }

@@ -4,6 +4,8 @@ $light-color: #ffffff;
 $dark-color: #000000;
 
 .logo {
+  display: flex;
+  justify-content: center;
   font-family: $heading-footer-font-family;
   text-decoration: none;
   font-style: normal;
@@ -18,4 +20,13 @@ $dark-color: #000000;
 }
 .logo--light-color {
   color: $light-color;
+}
+.logo--footer {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    display: flex;
+  }
 }

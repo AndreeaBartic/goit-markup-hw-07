@@ -1,0 +1,11 @@
+{
+  "name": "goit-markup-hw-08---nou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mobile_menu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

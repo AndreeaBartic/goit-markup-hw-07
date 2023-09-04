@@ -5,17 +5,19 @@ $light-color: #ffffff;
 .team {
   background: #f5f4fa;
   margin-top: 94px;
-  padding-bottom: 94px;
 }
 .team__heading {
   margin-bottom: 50px;
   text-align: center;
 }
 .team__list {
+  padding-bottom: 60px;
+  row-gap: 30px;
+
   display: flex;
+  flex-direction: column;
 }
 .team__item {
-  margin-right: 30px;
   flex-basis: calc((100% - 72px) / 4);
   text-align: center;
   background: $light-color;
@@ -42,6 +44,8 @@ $light-color: #ffffff;
   margin: 16px 44px 30px;
   color: #afb1b8;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .team__icon {
   width: 44px;
@@ -58,4 +62,21 @@ $light-color: #ffffff;
   color: $light-color;
   background-color: $link-button-color;
   border-radius: 50%;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list {
+    justify-content: center;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+  .team__item {
+    min-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -6,10 +6,22 @@ $paragraph-color: #757575;
 $light-color: #ffffff;
 $dark-color: #000000;
 
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.buttons-list {
+  background-color: #ffffff;
+  box-shadow: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
 .cards-list {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
   margin-bottom: -20px;
 }
 .portfolio-overlay-container {
@@ -18,7 +30,7 @@ $dark-color: #000000;
 }
 
 .cards-list__item {
-  margin-right: 30px;
+  width: 450px;
   margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -78,4 +90,30 @@ $dark-color: #000000;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: $paragraph-color;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo--footer {
+    margin-left: 124px;
+  }
+  .buttons-list {
+    justify-content: center;
+  }
+  .cards-list {
+    column-gap: 30px;
+  }
+  .cards-list__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-list {
+    justify-content: center;
+  }
+  .cards-list {
+    column-gap: 30px;
+  }
+  .cards-list__item {
+    width: 370px;
+  }
 }
