@@ -71,30 +71,6 @@
     <main>
       <section class="section hero">
         <div class="container hero-container">
-          <div class="hero__images">
-            <picture>
-              <source
-                srcset="
-                  images/hero-img/hero-mobile.jpg,
-                  images/hero-img/hero-mobile@2x.jpg 2x
-                "
-              />
-              <source
-                media="(min-width:768px)"
-                srcset="
-                  images/hero-img/hero-tablet.jpg,
-                  images/hero-img/hero-tablet@2x.jpg 2x
-                "
-              />
-              <source
-                media="(min-width:1200px)"
-                srcset="
-                  images/hero-img/hero-desktop.jpg,
-                  images/hero-img/hero-desktop@2x.jpg 2x
-                "
-              />
-            </picture>
-          </div>
           <h1 class="hero__heading">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
           <button class="hero__button" data-modal-open type="button">
             Request our service
@@ -194,7 +170,7 @@
               <h3 class="team__name">Christopher Walker</h3>
               <p class="team__description">Product Designer</p>
               <div class="team-icons__container">
-                <a class="team__icon" href="./instagram.com"
+                <a class="team__icon" href="https://instagram.com"
                   ><svg width="20" height="20">
                     <use
                       href="./images/symbol-defs.svg#icon-instagram"
@@ -375,7 +351,6 @@
             <li class="customers__card">
               <a href="./index.html"
                 ><svg class="customers__icon" width="106px" height="60">
-                  dress
                   <use href="./images/symbol-defs.svg#icon-Logo_5"></use></svg
               ></a>
             </li>
@@ -451,30 +426,32 @@
               </li>
             </ul>
           </li>
-          <form class="global-footer__form">
-            <span class="global-footer__description"
-              >Subscribe to the newsletter</span
-            >
-            <div class="email-button-row">
-              <label class="global-footer__label">
-                <input
-                  class="global-footer__input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button class="global-footer__button" type="submit">
-                Subscribe<svg
-                  class="global-footer__icon"
-                  width="24"
-                  height="24"
-                >
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+          <li>
+            <form class="global-footer__form">
+              <span class="global-footer__description"
+                >Subscribe to the newsletter</span
+              >
+              <div class="email-button-row">
+                <label class="global-footer__label">
+                  <input
+                    class="global-footer__input"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </label>
+                <button class="global-footer__button" type="submit">
+                  Subscribe<svg
+                    class="global-footer__icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </li>
         </ul>
       </div>
     </footer>
